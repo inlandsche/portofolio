@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Source+Sans+Pro&family=Work+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    top: 10;
+}
+.home{
+    display: flex;
+    background: url("images/background.png") no-repeat center;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.home .content{
+    margin-top: 300px;
+    margin-left: 170px;
+    margin-right: auto;
+}
+
+.home .text1{
+    font-weight: 550;
+    color: lavender;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+}
+
+.home .text2{
+    color: lavender;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+}
+
+.home .button-clickme{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+    border: none;
+    background-color: #00A0DD;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    color: lavender;
+    width: 100px;
+    height: 40px;
+}
+
+.home .button-clickme:hover{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 750;
+
+    border: 3px solid white;
+    background-color: #0084C7;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    width: 100px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.navbar{
+    overflow: hidden;
+    position: sticky;
+
+    top: 0;
+    background: #0084C7;
+
+    line-height: 6vh;
+    width: 100%;
+    float: none;
+}
+
+.navbar .content{
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+
+    text-align: center;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar a{
+    color: lavender;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+
+    text-decoration: none;
+
+    padding: 0px 16px;
+    opacity: 90%;
+
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: white;
+    font-weight: 600;
+
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+    opacity: 100%;
+}
+
+.navbar .menu li.active a{
+    color: white;
+    font-weight: 600;
+
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+    opacity: 100%;
+}
+
+
+.bottom-sec{
+    width: 100%;
+    display: inline-block;
+
+    width: 100%;
+}
+
+.bottom-sec .title{
+    text-align: center;
+    
+    font-family: 'Tahoma', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: white;
+    margin-bottom: 50px;
+}
+
+.bottom-sec .floating-button{
+    width: 50px;
+    height: 50px;
+
+    background:#0084C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.20);
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    transition: background 0.25s;
+}
+
+.bottom-sec .floating-button:active{
+    background: #009edd;
+}
+
+.bottom-sec .about{
+    background: #00A0DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bottom-sec .about .content{
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-sec .about .content .text{
+    border: 5px solid white;
+    border-radius: 15px;
+
+    width: 70%;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-weight: 550;
+
+    
+
+    padding: 15px;
+    margin: auto;
+    box-shadow: 6px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-sec .education{
+    min-width: 100%;
+    background: #00A0DD;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bottom-sec .education .content{
+    
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-sec .education .content .text{
+    width: fit-content;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bottom-sec .achievements{
+    min-width: 100%;
+    background: #00A0DD;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bottom-sec .achievements .content{
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-sec .achievements .content .text{
+    width: fit-content;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bottom-sec .projects{
+    min-width: 100%;
+    background: #00A0DD;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bottom-sec .projects .content{
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-sec .projects .content .text{
+    width: fit-content;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bottom-sec .contacts{
+    min-width: 100%;
+    background: #00A0DD;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bottom-sec .contacts .content{
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom-sec .contacts .content .text{
+    width: fit-content;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
